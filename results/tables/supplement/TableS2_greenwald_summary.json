@@ -1,0 +1,132 @@
+{
+  "GBM_MGH258": {
+    "region": "unknown",
+    "n_spots": 2397,
+    "risk": 0.49393072724342346,
+    "mes_pearson_vs_neftel": 0.04019181564094333,
+    "frac_immune_cold": 0.0,
+    "frac_immune_hot": 0.28952857738840215,
+    "frac_normal": 0.0025031289111389237,
+    "frac_necrotic": 0.7079682937004589
+  },
+  "GBM_ZH1007inf": {
+    "region": "infiltrating",
+    "n_spots": 1436,
+    "risk": 0.41812947392463684,
+    "mes_pearson_vs_neftel": -0.3388212083620231,
+    "frac_immune_cold": 0.0,
+    "frac_immune_hot": 0.9227019498607242,
+    "frac_normal": 0.0,
+    "frac_necrotic": 0.07729805013927576
+  },
+  "GBM_ZH1007nec": {
+    "region": "necrotic",
+    "n_spots": 955,
+    "risk": 0.22200286388397217,
+    "mes_pearson_vs_neftel": 0.4777946694506639,
+    "frac_immune_cold": 0.0,
+    "frac_immune_hot": 0.5706806282722513,
+    "frac_normal": 0.0,
+    "frac_necrotic": 0.4293193717277487
+  },
+  "GBM_ZH1019T1": {
+    "region": "contrast_enhancing",
+    "n_spots": 1112,
+    "risk": 0.2826822102069855,
+    "mes_pearson_vs_neftel": 0.09578311661661378,
+    "frac_immune_cold": 0.0,
+    "frac_immune_hot": 0.26618705035971224,
+    "frac_normal": 0.0,
+    "frac_necrotic": 0.7338129496402878
+  },
+  "GBM_ZH1019inf": {
+    "region": "infiltrating",
+    "n_spots": 1726,
+    "risk": 0.44866397976875305,
+    "mes_pearson_vs_neftel": 0.33056353188392024,
+    "frac_immune_cold": 0.0,
+    "frac_immune_hot": 0.5393974507531866,
+    "frac_normal": 0.0,
+    "frac_necrotic": 0.46060254924681343
+  },
+  "GBM_ZH8811Abulk": {
+    "region": "bulk",
+    "n_spots": 2486,
+    "risk": 0.024863101541996002,
+    "mes_pearson_vs_neftel": 0.5772203748162386,
+    "frac_immune_cold": 0.0,
+    "frac_immune_hot": 0.36242960579243766,
+    "frac_normal": 0.0,
+    "frac_necrotic": 0.6375703942075623
+  },
+  "GBM_ZH8811Bbulk": {
+    "region": "bulk",
+    "n_spots": 2595,
+    "risk": 0.03605687618255615,
+    "mes_pearson_vs_neftel": 0.5926277786513193,
+    "frac_immune_cold": 0.0,
+    "frac_immune_hot": 0.2998073217726397,
+    "frac_normal": 0.0,
+    "frac_necrotic": 0.7001926782273603
+  },
+  "GBM_ZH8812bulk": {
+    "region": "bulk",
+    "n_spots": 2343,
+    "risk": 0.5749337673187256,
+    "mes_pearson_vs_neftel": 0.6232770199178769,
+    "frac_immune_cold": 0.09304310712761417,
+    "frac_immune_hot": 0.6841655996585574,
+    "frac_normal": 0.0038412291933418692,
+    "frac_necrotic": 0.21895006402048656
+  },
+  "GBM_ZH881T1": {
+    "region": "contrast_enhancing",
+    "n_spots": 2792,
+    "risk": 0.002043291926383972,
+    "mes_pearson_vs_neftel": 0.32172960340560414,
+    "frac_immune_cold": 0.0,
+    "frac_immune_hot": 0.3398997134670487,
+    "frac_normal": 0.0,
+    "frac_necrotic": 0.6601002865329513
+  },
+  "GBM_ZH881_inf": {
+    "region": "infiltrating",
+    "n_spots": 1387,
+    "risk": 0.43253448605537415,
+    "mes_pearson_vs_neftel": 0.16222272675855226,
+    "frac_immune_cold": 0.0,
+    "frac_immune_hot": 0.13338139870223503,
+    "frac_normal": 0.07642393655371305,
+    "frac_necrotic": 0.7901946647440519
+  },
+  "GBM_ZH916T1": {
+    "region": "contrast_enhancing",
+    "n_spots": 2780,
+    "risk": 0.07810758054256439,
+    "mes_pearson_vs_neftel": 0.2979671593722041,
+    "frac_immune_cold": 0.0,
+    "frac_immune_hot": 0.5877697841726619,
+    "frac_normal": 0.0,
+    "frac_necrotic": 0.41223021582733815
+  },
+  "GBM_ZH916bulk": {
+    "region": "bulk",
+    "n_spots": 2199,
+    "risk": -0.020085874944925308,
+    "mes_pearson_vs_neftel": 0.6493151257875429,
+    "frac_immune_cold": 0.002728512960436562,
+    "frac_immune_hot": 0.10686675761709868,
+    "frac_normal": 0.005911778080945885,
+    "frac_necrotic": 0.8844929513415188
+  },
+  "GBM_ZH916inf": {
+    "region": "infiltrating",
+    "n_spots": 1280,
+    "risk": 0.3155522048473358,
+    "mes_pearson_vs_neftel": 0.01238830808486051,
+    "frac_immune_cold": 0.26484375,
+    "frac_immune_hot": 0.1484375,
+    "frac_normal": 0.17421875,
+    "frac_necrotic": 0.4125
+  }
+}

@@ -1,0 +1,34 @@
+# Niche label rules for DeepGraph-GBM.
+# Labels are derived from the SNUH 2026 GBM atlas per-spot annotations:
+#   - AF: anatomical feature (Ivy GAP-style: LE_GM/LE_WM leading edge, CT cellular tumor,
+#         IT infiltrating tumor, PAN pseudopalisading around necrosis, PNZ perinecrotic zone,
+#         MVP microvascular proliferation, BV/HBV blood vessels, IGN immune-glial niche)
+#   - metaprogram: spot-level functional program (CT, IT, LE_GM, LE_WM, hypoxic, immune, vascular)
+#   - greenwald_metaprograms: malignant cell-state labels (MES (malig.), MES.Hyp (malig.), ...)
+#
+# A spot receives a niche label only when its annotations are concordant with the rule;
+# vascular and discordant spots are excluded from Head-1 training (label = "exclude").
+
+niche_rules:
+  necrotic:
+    AF: [PAN, PNZ]
+  immune_hot:
+    metaprogram: [immune]
+    not_AF: [PAN, PNZ]
+  normal:
+    AF: [LE_GM, LE_WM]
+    metaprogram: [LE_GM, LE_WM]
+  immune_cold:
+    AF: [CT, IT, IGN]
+    metaprogram: [CT, IT, hypoxic]
+
+# priority order when rules overlap (first match wins)
+priority: [necrotic, immune_hot, normal, immune_cold]
+
+# Head 2: MES probability target = fraction of MES malignant states
+mes_states:
+  - "MES (malig.)"
+  - "MES.Hyp (malig.)"
+  - "MES.Ast (malig.)"
+
+niche_classes: [immune_cold, immune_hot, normal, necrotic]

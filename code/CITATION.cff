@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "DeepGraph-GBM: Graph Neural Network for Predicting Immunosuppressive Spatial Niches in Glioblastoma"
+authors:
+  - family-names: Hossain
+    given-names: Jubayer
+version: 0.1.0
+date-released: 2026-08-05
+license: MIT
+repository-code: https://github.com/jubayer-hossain/deepgraph-gbm
+keywords:
+  - glioblastoma
+  - spatial transcriptomics
+  - graph neural network
+  - Visium
+  - tumor microenvironment

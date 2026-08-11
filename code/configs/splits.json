@@ -1,0 +1,41 @@
+{
+  "train": [
+    "SNU17",
+    "SNU18",
+    "SNU21",
+    "SNU23",
+    "SNU25",
+    "SNU27",
+    "SNU43",
+    "SNU46"
+  ],
+  "val": [
+    "SNU24",
+    "SNU51"
+  ],
+  "test": [
+    "SNU16",
+    "SNU33",
+    "SNU34"
+  ],
+  "all_patients": [
+    "SNU16",
+    "SNU17",
+    "SNU18",
+    "SNU21",
+    "SNU23",
+    "SNU24",
+    "SNU25",
+    "SNU27",
+    "SNU33",
+    "SNU34",
+    "SNU43",
+    "SNU46",
+    "SNU51"
+  ],
+  "frozen_patients_in_train": [
+    "SNU18",
+    "SNU21"
+  ],
+  "seed": 42
+}
