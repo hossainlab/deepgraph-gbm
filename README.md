@@ -25,20 +25,37 @@ Build a Graph Neural Network (GNN) that takes a Visium spatial transcriptomics s
 
 
 ## Architecture
-Input: Spatial transcriptomics graph
-├── Node features: Gene expression vector per spot (2,000–3,000 HVGs)
-├── Edge features: Physical distance between spots (adjacency matrix)
-├── Edge connections: k-nearest neighbors in physical space (k=6)
-│
-├─> GNN Encoder (3 layers of GraphSAGE or GAT)
-│   └── Learns: Spot embeddings that incorporate neighborhood context
-│
-├─> Multi-Task Heads:
-│   ├── Head 1: Niche Classifier (4 classes: cold/hot/normal/necrotic)
-│   ├── Head 2: MES Probability Regressor (0–1 per spot)
-│   └── Head 3: Patient Survival Predictor (high/low risk)
-│
-└─> Output: Spatial niche map + survival risk score
+flowchart TD
+
+    A["Spatial Transcriptomics Graph"]
+
+    A --> B["Node Features<br/>Gene expression vector<br/>2,000–3,000 HVGs"]
+    A --> C["Edge Features<br/>Physical distance<br/>Adjacency matrix"]
+    A --> D["Edge Connections<br/>k-NN in physical space<br/>k = 6"]
+
+    B --> E["GNN Encoder"]
+    C --> E
+    D --> E
+
+    E --> E1["GraphSAGE / GAT<br/>3 Layers"]
+    E1 --> F["Spot Embeddings<br/>Neighborhood-aware representations"]
+
+    F --> G["Multi-Task Learning Heads"]
+
+    G --> H["Head 1<br/>Niche Classifier"]
+    G --> I["Head 2<br/>MES Probability Regressor"]
+    G --> J["Head 3<br/>Patient Survival Predictor"]
+
+    H --> H1["4 Classes<br/>Cold / Hot / Normal / Necrotic"]
+    I --> I1["MES Probability<br/>0–1 per spot"]
+    J --> J1["Survival Risk<br/>High / Low"]
+
+    H1 --> K["Spatial Niche Map"]
+    I1 --> K
+    J1 --> L["Survival Risk Score"]
+
+    K --> M["Final Output"]
+    L --> M
 
 
 ## Why GNN?
