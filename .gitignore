@@ -1,4 +1,5 @@
 # data & artifacts (too large for git; see README quickstart to regenerate)
+manuscript/
 data/
 models/seed*/
 results/
